@@ -6,28 +6,123 @@
 
     <link rel="icon"
           href="/imagenes/balon.ico">
+		  
+	<style>
+	table, td, th{
+		border:solid black 1px;
+	}
+</style>	  
+
+
+/* Selector de etiqueta */
+<style>
+    /* .css */
+    /* selector {
+	   propiedad:valor;
+       p1:valor}
+        busqueda q va a hacer el navegador dentro del documento
+     */
+    
+	/*selector de etiqueta*/
+	h1{
+        color:white;
+		background-color:#E5AA39;
+    }
+	
+	p,div,h2{
+        color:white;
+		background-color:#E53939;
+		font-size:24px;
+        font-weight:700;
+    }
+	
+	/*selector por ID*/
+	#adios {
+        color:black;
+		background-color:red;
+    }
+	
+	
+	
+	/* Jerarquia de selectores
+		Selector mas importante es el ID que la Clase
+		Clase mas importante que la etiqueta
+		ID -> CLASE -> ETIQUETA
+		*Mas importante q el ID: Style (toda etiqueta lo tiene) NO USAR
+	/*
+	
+	
+	.morado{
+		color:purple;
+		background-color:brown;
+	}
+	
+	.azul{
+		color:deepskyblue;
+		background-color:brown;
+	}
+	
+	<!-- selector de clases -->
+	.verde {
+        color:#47E539;
+		background-color:brown;
+    }
+		
+
+</style>
+
+
 
 </head>
 
 <body bgcolor="#44444A" text="White">
 
 <h1>PAGINA ECUAGOL</h1>
-<div class="pagina">
-						<div class="PublicidadLateralizquierda" style="width:120px; height:600px;display:block; ">
-					<div id="izqAb" class="unionsc" style="position:absolute;z-index: 9">
-						<!-- /105274759/Skycrapper-Izq-Unionlayer -->
-						<div id='div-gpt-ad-1522349456234-0' style='height:600px; width:120px;'>
-						<script>
-						googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522349456234-0'); });
-						</script>
-						</div>
-					</div>
-					<!-- /105274759/Ecuagol-SkyCrapper-Izq -->
-					<!--div id='div-gpt-ad-1522345366740-0' style='height:600px; width:120px;'>
-						<script>
-						googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522345366740-0'); });
-						</script>
-					</div-->
-				</div>
+
+
+
+<table>
+<tr>
+	<th>Nombres</th>
+	<th>Apellidos</th>
+</tr>	
+<tr>
+	<td>Leonardo</td>
+	<td>Sandoval</td>
+	
+	<!--salto de linea-->
+	<br>
+</tr>	
+</table>
+
+<h1>Hola</h1>
+<h1 id="adios" class="verde" style="color:white; background-color:black;">Adios</h1>
+<h1 class="verde">Bienvenidos</h1>
+
+<!--contenedor, no tiene funcionalidad, para estilos-->
+<div>
+
+<div>
+   
+<p>Nacional</p>
+<div>Liga</div>
+<h2>Emelec</h2>
+
+<!--
+	el style definido en el BODY PREVALECERA sobre el definido
+	en el HEAD 
+	SI IMPORTA el orden en q se definan los ESTILOS
+-->
+<style>
+p{
+        color:blue;
+		background-color:#E53939;
+		font-size:24px;
+        font-weight:700;
+    }
+	
+
+</style>
+
 </body>
 </html>
